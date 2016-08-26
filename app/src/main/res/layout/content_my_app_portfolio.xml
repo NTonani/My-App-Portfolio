@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nathantonani.myappportfolio.MyAppPortfolio"
+    tools:showIn="@layout/activity_my_app_portfolio">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Popular Movies"
+            android:id="@+id/popularMoviesBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Stock Hawk"
+            android:id="@+id/stockHawkBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Build it Bigger"
+            android:id="@+id/buildItBiggerBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Make Your App Material"
+            android:id="@+id/makeYourAppMaterialBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Go Ubiquitous"
+            android:id="@+id/goUbiquitousBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+
+        <Button
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="Capstone"
+            android:id="@+id/capstoneBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:onClick="onProjectClick"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nanodegree Apps"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
